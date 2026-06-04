@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Ryusei Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">RYUSEI PORTFOLIO</div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="about-page">
+    <section class="about-hero no-image">
+      <div class="about-content center animate fade-up">
+        <h1 class="animate fade-up delay-1">About Me</h1>
+        <p class="about-name animate fade-up delay-2">早友 隆誠 / Ryusei Hayatomo</p>
+        <p class="animate fade-up delay-3">
+          日本大学国際関係学部の学生です。<br />
+          未経験からプログラミング学習を始め、Ruby on Railsを中心に
+          Web開発・アプリ制作・改善に取り組んできました。
+        </p>
+      </div>
+    </section>
+
+    <section class="about-section story-section animate fade-up">
+      <h2>Story</h2>
+      <p class="story-subtitle">— これまでの歩み —</p>
+
+      <div class="story-slider">
+        <button class="story-btn prev" aria-label="前へ">‹</button>
+
+        <div class="story-track-wrapper">
+          <div class="story-track">
+            <article class="story-card">
+              <h3>● 小学校</h3>
+              <h4>野球に夢中だった原点</h4>
+              <img src="images/baseball.jpg" alt="小学校時代" />
+              <p>
+                小学校2年生から野球を始め、選抜に選ばれるなど日々野球に没頭していました。
+                休みの日には友人と秘密基地を作ったり、公園で野球やサッカーをしたりと、
+                外で遊ぶことが多い活発な子どもでした。
+              </p>
+            </article>
+
+            <article class="story-card">
+              <h3>● 中学校</h3>
+              <h4>努力で苦手を変えた時期</h4>
+              <img src="images/study.jpg" alt="中学校時代" />
+              <p>
+                中学校でも野球を続け、1年生から試合に出場し主軸を担いました。
+                副主将として千葉県ベスト4を目指す中で、野球だけでなく勉強にも力を入れ、
+                学年168位/170位から安定して20位以内まで成績を伸ばしました。
+              </p>
+            </article>
+
+            <article class="story-card">
+              <h3>● 高校</h3>
+              <h4>挫折と転向を経験した時期</h4>
+              <img src="images/baseball2.jpg" alt="高校時代" />
+              <p>
+                私立高校に特待生として入学し、勉強でも最上位クラスに所属しながら
+                野球との両立に取り組みました。肩の怪我で投手を断念しましたが、
+                野手へ転向し、Bチームでは4番、Aチームでは代打を任されるまで努力を重ねました。
+              </p>
+            </article>
+
+            <article class="story-card">
+              <h3>● 大学</h3>
+              <h4>プログラミングに挑戦した転機</h4>
+              <img src="images/study.jpg" alt="大学時代" />
+              <p>
+                2年の冬に将来への危機感を抱き、苦手意識のあったプログラミングに挑戦しました。
+                ITスクールで学習を開始し、3か月でWebサイトを制作・デプロイ。
+                その後は約2年間メンターとして教える側も経験し、現在はJavaやAWSも学んでいます。
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <button class="story-btn next" aria-label="次へ">›</button>
+      </div>
+
+      <div class="story-dots">
+        <button class="story-dot active" data-index="0" aria-label="1枚目へ"></button>
+        <button class="story-dot" data-index="1" aria-label="2枚目へ"></button>
+        <button class="story-dot" data-index="2" aria-label="3枚目へ"></button>
+        <button class="story-dot" data-index="3" aria-label="4枚目へ"></button>
+      </div>
+    </section>
+
+<section class="about-section animate fade-up">
+  <h2>Skills</h2>
+
+  <div class="skill-category">
+    <h3>Languages</h3>
+    <p>
+      <strong>Ruby</strong> /
+      JavaScript /
+      <strong>TypeScript</strong> /
+      <strong>Python</strong> /
+      HTML /
+      CSS
+    </p>
+  </div>
+
+  <div class="skill-category">
+    <h3>Frameworks & Libraries</h3>
+    <p>
+      <strong>Ruby on Rails</strong> /
+      <strong>Next.js</strong>
+    </p>
+  </div>
+
+  <div class="skill-category">
+    <h3>Database</h3>
+    <p>
+      PostgreSQL /
+      <strong>Supabase</strong>
+    </p>
+  </div>
+
+  <div class="skill-category">
+    <h3>Tools & Platforms</h3>
+    <p>
+      Git /
+      GitHub /
+      Vercel /
+      Render /
+      Google Apps Script
+    </p>
+  </div>
+
+  <div class="skill-category">
+    <h3>AI & Automation</h3>
+    <p>
+      <strong>OpenAI API</strong> /
+      Python Data Analysis /
+      Workflow Automation
+    </p>
+  </div>
+
+  <p class="skill-description">
+    現在はRuby on Railsを用いたWeb開発に加え、
+    Next.js・TypeScript・Supabaseによるフルスタック開発に取り組んでいます。
+    また、OpenAI APIを活用したAI機能の実装や、
+    Google Apps Scriptによる業務自動化ツールの開発経験があります。
+  </p>
+</section>
+
+    <section class="about-section animate fade-up">
+      <h2>Learning</h2>
+      <p>Java / AWS</p>
+    </section>
+
+    <section class="about-section like-section animate fade-up">
+      <h2>Like</h2>
+        <p class="like-subtitle">— 好きなもの・趣味 —</p>
+
+        <div class="like-grid">
+          <div class="like-card">
+            <img src="images/baseball.jpg" alt="野球" />
+            <h3>野球</h3>
+            <p>
+              小学校2年生から続けてきた、自分の原点です。
+              今でも仲間とプレーしながら、成長と挑戦を楽しんでいます。
+            </p>
+          </div>
+
+          <div class="like-card">
+            <img src="images/fashion.jpg" alt="ファッション" />
+            <h3>ファッション</h3>
+            <p>
+              日常の中で自分を表現できる手段として大切にしています。
+              シンプルで洗練されたスタイルを意識しています。
+            </p>
+          </div>
+
+          <div class="like-card">
+            <img src="images/meal.jpg" alt="食事" />
+            <h3>食事</h3>
+            <p>
+              美味しいものを食べる時間が好きです。
+              人と過ごす時間や、日常の楽しみの一つとして大切にしています。
+            </p>
+          </div>
+
+          <div class="like-card">
+            <img src="images/music.jpg" alt="音楽" />
+            <h3>音楽</h3>
+            <p>
+              気分やシーンに合わせて音楽を楽しんでいます。
+              日常に欠かせない存在です。
+            </p>
+          </div>
+
+          <div class="like-card">
+            <img src="images/book.jpg" alt="読書" />
+            <h3>読書</h3>
+            <p>
+              知識や考え方を広げるために読書をしています。
+              新しい視点に触れることを大切にしています。
+            </p>
+          </div>
+        </div>
+    </section>
+
+    <div class="back-link animate fade-up">
+      <a href="index.html" class="btn">BACK TO HOME</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Ryusei Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
