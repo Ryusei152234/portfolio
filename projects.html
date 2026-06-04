@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Ryusei Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">RYUSEI PORTFOLIO</div>
+
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="projects-page">
+    <div class="container">
+      <p class="sub-title">My Works</p>
+      <h1>PROJECTS</h1>
+
+        <div class="projects-header">
+        <p class="sub-title">My Works</p>
+        <h1>PROJECTS</h1>
+
+        <p class="description">
+            課題発見から設計・開発・改善まで一貫して取り組んだ<br>
+            個人開発プロジェクトを掲載しています。
+        </p>
+        </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <p class="project-number">01</p>
+          <h2>Muscle Routing</h2>
+          <p class="project-label">筋トレ習慣化アプリ</p>
+
+          <p>
+            筋トレを継続できない人に向けて、目標設定・記録・振り返りを通じて
+            習慣化をサポートするWebアプリです。
+          </p>
+
+          <div class="project-section">
+            <h3>課題</h3>
+            <p>
+              筋トレを始めても継続できず、目標や記録が曖昧になりやすいこと。
+            </p>
+          </div>
+
+          <div class="project-section">
+            <h3>主な機能</h3>
+            <ul class="project-list">
+              <li>目標設定機能</li>
+              <li>トレーニング記録機能</li>
+              <li>日記・振り返り機能</li>
+              <li>AIアドバイス機能</li>
+            </ul>
+          </div>
+
+          <p class="tech-stack">
+            Ruby on Rails / PostgreSQL / OpenAI API / Render
+          </p>
+
+          <div class="button-group">
+            <a
+              href="https://muscle-routing-2.onrender.com/"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Site
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <p class="project-number">02</p>
+          <h2>就活 Compass</h2>
+          <p class="project-label">就活管理アプリ</p>
+
+          <p>
+            就職活動における企業管理・選考状況・タスク管理を
+            一元化するために開発したWebアプリです。
+          </p>
+
+          <div class="project-section">
+            <h3>課題</h3>
+            <p>
+              企業情報、選考状況、ES、面接予定などが複数ツールに分散し、
+              次に取るべき行動が見えにくくなること。
+            </p>
+          </div>
+
+          <div class="project-section">
+            <h3>主な機能</h3>
+            <ul class="project-list">
+              <li>企業管理機能</li>
+              <li>選考ステータス管理</li>
+              <li>タスク管理機能</li>
+              <li>ダッシュボード機能</li>
+            </ul>
+          </div>
+
+          <p class="tech-stack">
+            Next.js / TypeScript / Supabase / Vercel
+          </p>
+
+          <div class="button-group">
+            <a
+              href="https://shukatsu-compass.vercel.app/"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Site
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Ryusei Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
