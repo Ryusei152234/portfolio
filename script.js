@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector(".header");
+  const updateHeader = () => header?.classList.toggle("scrolled", window.scrollY > 16);
+  updateHeader();
+  window.addEventListener("scroll", updateHeader, { passive: true });
+
   // =========================
   // 1. スクロールアニメーション
   // =========================
@@ -9,8 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("show");
-        } else {
-          entry.target.classList.remove("show");
+          observer.unobserve(entry.target);
         }
       });
     },
@@ -80,6 +84,10 @@ const observer = new IntersectionObserver(
 
 projectCards.forEach((card) => {
   observer.observe(card);
+
+  const canTilt = window.matchMedia("(hover: hover) and (pointer: fine)").matches &&
+    !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!canTilt) return;
 
   card.addEventListener("mousemove", (e) => {
     const rect = card.getBoundingClientRect();
