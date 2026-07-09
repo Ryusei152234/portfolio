@@ -90,6 +90,11 @@ projectCards.forEach((card) => {
   if (!canTilt) return;
 
   card.addEventListener("mousemove", (e) => {
+    if (e.target.closest("a, button")) {
+      card.style.transform = "rotateX(0) rotateY(0) translateY(0)";
+      return;
+    }
+
     const rect = card.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
