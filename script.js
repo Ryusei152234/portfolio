@@ -84,28 +84,4 @@ const observer = new IntersectionObserver(
 
 projectCards.forEach((card) => {
   observer.observe(card);
-
-  const canTilt = window.matchMedia("(hover: hover) and (pointer: fine)").matches &&
-    !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (!canTilt) return;
-
-  card.addEventListener("mousemove", (e) => {
-    if (e.target.closest("a, button")) {
-      card.style.transform = "rotateX(0) rotateY(0) translateY(0)";
-      return;
-    }
-
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    const rotateX = (y - rect.height / 2) / 18;
-    const rotateY = (rect.width / 2 - x) / 18;
-
-    card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
-  });
-
-  card.addEventListener("mouseleave", () => {
-    card.style.transform = "rotateX(0) rotateY(0) translateY(0)";
-  });
 });

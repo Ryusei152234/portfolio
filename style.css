@@ -863,7 +863,6 @@ img {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.8s ease, transform 0.3s ease, box-shadow 0.3s ease;
-  transform-style: preserve-3d;
 }
 
 .project-card.show {
