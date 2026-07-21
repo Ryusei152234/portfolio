@@ -857,6 +857,31 @@ img {
   .project-card {
     padding: 28px;
   }
+
+  .project-card .button-group {
+    width: 100%;
+    margin-top: 24px;
+  }
+
+  .project-card .btn {
+    display: flex;
+    width: 100%;
+    min-height: 48px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 18px;
+    border-radius: 10px;
+    letter-spacing: 0.04em;
+  }
+
+  .project-card .btn:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .project-card .btn::after {
+    display: none;
+  }
 }
 
 .project-card {
